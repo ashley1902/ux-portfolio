@@ -1,0 +1,91 @@
+.case-study-detail {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+}
+
+.info-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.info-card {
+  background: #f5f7fb;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 260px;
+  font-size: 0.95rem;
+}
+
+.image {
+  width: 100%;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.persona-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.insight {
+  background: #e9f0ff;
+  padding: 0.75rem;
+  border-left: 4px solid #4a90e2;
+  margin: 1rem 0;
+}
+
+.recommendation {
+  background: #eef6f0;
+  padding: 0.75rem;
+  border-left: 4px solid #4CAF50;
+  margin-top: 0.5rem;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+blockquote {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-left: 4px solid #bbb;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 1rem 0;
+  color: #276ef1;
+  font-weight: 500;
+}
