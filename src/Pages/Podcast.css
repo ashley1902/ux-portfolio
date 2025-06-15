@@ -1,0 +1,146 @@
+.podcast-wrapper {
+  padding: 4rem 1.5rem;
+  background-color: #fff;
+}
+
+.podcast-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.podcast-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0a0a0a;
+  margin-bottom: 1rem;
+}
+
+.podcast-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #495057;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #0a0a0a;
+}
+
+.episode-card {
+  background: linear-gradient(135deg, #f8f9ff, #f4f7ff);
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.episode-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.episode-status {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.episode-announcement {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.episode-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.3rem;
+}
+
+.episode-subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.episode-description {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.episode-guests {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.episode-info-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.episode-info-icons div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.collab-box {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.collab-box h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.collab-box p {
+  color: #4b5563;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.collab-box button {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+  box-shadow: none;
+}
+
+.collab-box button:hover {
+  background-color: #1d4ed8;
+}
+

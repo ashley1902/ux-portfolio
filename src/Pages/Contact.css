@@ -1,0 +1,257 @@
+/* src/Pages/Contact.css */
+
+.contact-wrapper {
+  padding: 4rem 1.5rem;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.contact-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 3rem;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-item .icon {
+  color: #2563eb;
+  background-color: #e8f0ff;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+}
+
+.contact-item a {
+  color: #2563eb;
+  font-size: 1rem;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.expertise-box {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+}
+
+.expertise-box h3 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+.expertise-box ul {
+  padding-left: 1.2rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+.ai-assistant {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.ai-assistant h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.ai-assistant .tag {
+  display: inline-block;
+  background-color: #facc15;
+  color: #92400e;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.ai-box {
+  background: linear-gradient(135deg, #f0f4ff, #e6f0ff);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ai-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ai-header .ai-icon {
+  font-size: 2rem;
+  color: #2563eb;
+  background-color: #e0e7ff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-header strong {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #111827;
+  display: block;
+}
+
+.ai-header .sub {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.ai-knowledge {
+  margin-bottom: 1rem;
+}
+
+.ai-knowledge p {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.ai-knowledge ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+  color: #374151;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.ai-try {
+  border: 1px solid #c7d2fe;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.ai-try p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chips span {
+  background-color: #e0e7ff;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #1d4ed8;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.chips span:hover {
+  background-color: #c7d2fe;
+}
+
+.ai-box .start-btn {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  float: right;
+}
+
+.ai-box .start-btn:hover {
+  background-color: #1e40af;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ai-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .ai-box .start-btn {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.1rem;
+  }
+}
