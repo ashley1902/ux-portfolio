@@ -5,64 +5,84 @@ import './Blogs.css';
 function Blogs() {
   const blogPosts = [
     {
-      title: 'CPM-GOMS Meets Behavioral Science',
+      title: 'Bridging the Gap – Why We Need Both CPM-GOMS and Behavioral Science in UX',
       subtitle: 'A framework combining task modeling with behavior analysis',
-      category: 'UX Methods',
-      route: '/blogs/cpm-goms'
+      category: 'Research Framework',
+      route: '/blogs/cpm-goms',
+      date: '2025-06-14',
+      readTime: '9 min read'
     },
     {
-      title: 'Signal-to-Noise in Interface Evaluation',
-      subtitle: 'Improving clarity in high-cognitive-load environments',
-      category: 'UX Metrics',
-      route: '/blogs/signal-noise'
+      title: 'Modeling Emotional Drift in AI Interactions with ValTEx',
+      subtitle: 'Tracking the emotional shifts in user-AI interactions, enabling responsive design changes or real-time agent adaptation.',
+      category: 'Research Framework',
+      route: '/blogs/valtex',
+      date: '2025-06-08',
+      readTime: '9 min read'
     },
     {
-      title: 'Tree Testing Meets Machine Learning',
-      subtitle: 'How decision trees improve IA and content findability',
-      category: 'Information Architecture',
-      route: '/blogs/tree-testing'
+      title: 'Designing Feedback Loops for Adaptive AI Agents Using Drift Detection and Sentiment Signal Maps',
+      subtitle: 'Detecting emotional drift and mapping sentiment signals enables AI agents to personalize responses, enhance engagement, and foster emotionally intelligent, adaptive user experiences.',
+      category: 'Research Framework',
+      route: '/blogs/feedback-loops',
+      date: '2025-06-08',
+      readTime: '8 min read'
     },
     {
-      title: 'Autoethnography in UX',
-      subtitle: 'Turning self-observation into design data',
-      category: 'Qualitative Research',
-      route: '/blogs/autoethnography'
+      title: 'Loop Response Modeling',
+      subtitle: 'Detecting friction and modeling recovery loops enables AI to restore trust through empathetic interventions, sentiment tracking, and adaptive user experience repair strategies.',
+      category: 'Research Framework',
+      route: '/blogs/loop-response',
+      date: '2025-06-04',
+      readTime: '7 min read'
     },
     {
-      title: 'Behavioral Personas Using NMF',
-      subtitle: 'Task analysis meets unsupervised clustering',
-      category: 'Quant UX',
-      route: '/blogs/behavioral-personas'
+      title: 'Temporal Sentiment Modeling',
+      subtitle: 'Tracking emotional valence over time, Temporal Sentiment Modeling helps identify friction points, measure recovery speed, and model emotional resilience for more adaptive, human-centered AI experiences.',
+      category: 'Research Framework',
+      route: '/blogs/temporal-sentiment',
+      date: '2025-06-04',
+      readTime: '7 min read'
     },
     {
       title: 'SPICE, SPIDER & ECLIPSE Frameworks',
       subtitle: 'Asking powerful UX research questions',
       category: 'Research Frameworks',
-      route: '/blogs/research-frameworks'
+      route: '/blogs/research-frameworks',
+      date: '2025-06-04',
+      readTime: '7 min read'
     },
     {
       title: 'ELO Scoring in Usability Testing',
       subtitle: 'Using competitive ranking models in UX',
       category: 'Evaluation Methods',
-      route: '/blogs/elo-usability'
+      route: '/blogs/elo-usability',
+      date: '2025-06-04',
+      readTime: '7 min read'
     },
     {
       title: 'Whisper + GPT for UX Transcription',
       subtitle: 'AI pipelines for qualitative analysis at scale',
       category: 'AI Tools',
-      route: '/blogs/whisper-pipeline'
+      route: '/blogs/whisper-pipeline',
+      date: '2025-06-04',
+      readTime: '7 min read'
     },
     {
       title: 'Sentiment Loops in Agentic AI',
       subtitle: 'Designing emotion-aware feedback cycles',
       category: 'Agent UX',
-      route: '/blogs/sentiment-loops'
+      route: '/blogs/sentiment-loops',
+      date: '2025-06-04',
+      readTime: '7 min read'
     },
     {
       title: 'Drift Detection in UX Telemetry',
       subtitle: 'Monitoring behavioral changes over time',
       category: 'Product Analytics',
-      route: '/blogs/ux-drift'
+      route: '/blogs/ux-drift',
+      date: '2025-06-04',
+      readTime: '7 min read'
     }
   ];
 
