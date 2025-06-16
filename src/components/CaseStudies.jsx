@@ -17,12 +17,12 @@ function CaseStudies() {
           <div className="case-card">
             <img src={case1} alt="Coke Buddy" />
             <div className="tags">
-              <span>Mixed Methods</span>
-              <span>Fintech</span>
+              <span>FMCG</span>
+              <span>B2B</span>
             </div>
-            <h4>Coke Buddy Case Study</h4>
+            <h4>Behavioral Redesign of a B2B Ordering App for Indian Retailers</h4>
             <p>
-              Mixed-methods research combining behavioral analytics and user interviews to improve trading efficiency by 45%.
+              Improve discoverability, personalization, and reorder efficiency in a B2B app for small and medium-sized retailers across India. Deep dive into persona-driven UX redesign, research methods, impact metrics, and key insights.
             </p>
           </div>
 
@@ -33,9 +33,9 @@ function CaseStudies() {
               <span>Quantitative</span>
               <span>Clustering Analysis</span>
             </div>
-            <h4>Watchlist Case Study</h4>
+            <h4>Personalizing the Watchlist Experience through Behaviorally Clustered Insights</h4>
             <p>
-              Using K-Prototypes clustering and Fogg's Behavioral Model to analyze user behavior and optimize watchlist features.
+              Using K-Prototypes clustering and Fogg's Behavioral Model to analyze user behavior and optimize watchlist features in trading platform.
             </p>
           </div>
 
@@ -46,9 +46,9 @@ function CaseStudies() {
               <span>Qualitative</span>
               <span>Entertainment</span>
             </div>
-            <h4>OTT Redesign Case Study</h4>
+            <h4>Redesigning Discovery for an OTT Aggregator</h4>
             <p>
-              User behavior analysis using thematic analysis and audience segmentation for content strategy.
+              Turning Scrolling Fatigue into Confident Choices through Behavioral UX Research.
             </p>
           </div>
         </div>

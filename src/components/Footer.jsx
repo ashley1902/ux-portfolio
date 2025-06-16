@@ -17,10 +17,10 @@ function Footer() {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Podcasts</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/case-studies">Case Studies</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a href="/podcasts">Podcasts</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
 
@@ -28,9 +28,15 @@ function Footer() {
         <div className="footer-connect">
           <h4>Connect</h4>
           <div className="icon-group">
-            <a href="#"><span className="icon">✉️</span></a>
-            <a href="#"><span className="icon">🔗</span></a>
-            <a href="#"><span className="icon">🐙</span></a>
+            <a href="mailto:uxguy.in@gmail.com" target="_blank" rel="noopener noreferrer">
+              <span className="icon">📧</span>
+            </a>
+            <a href="https://www.linkedin.com/in/gopinathvivek" target="_blank" rel="noopener noreferrer">
+              <span className="icon">💼</span>
+            </a>
+            <a href="https://github.com/uxguy-in" target="_blank" rel="noopener noreferrer">
+              <span className="icon">🐙</span>
+            </a>
           </div>
         </div>
       </div>

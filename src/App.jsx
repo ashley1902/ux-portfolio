@@ -7,6 +7,7 @@ import CaseStudiesPage from './Pages/CaseStudiesPage';
 import CaseStudyProtected from './Pages/CaseStudyProtected';
 import Podcast from './Pages/Podcast';
 import Contact from './Pages/Contact';
+import Blogs from './Pages/Blogs';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/case-studies/:id" element={<CaseStudyProtected />} />
         <Route path="/podcasts" element={<Podcast />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
       <Footer />
     </>
