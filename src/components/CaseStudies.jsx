@@ -36,7 +36,7 @@ function CaseStudies() {
               <span>Quantitative</span>
               <span>Clustering Analysis</span>
             </div>
-            <h4>Personalizing the Watchlist Experience through Behaviorally Clustered Insights</h4>
+            <h4>WIP - Personalizing the Watchlist Experience through Behaviorally Clustered Insights</h4>
             <p>
               Using K-Prototypes clustering and Fogg's Behavioral Model to analyze user behavior and optimize watchlist features in trading platform.
             </p>
