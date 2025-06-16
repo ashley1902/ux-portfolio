@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import './CaseStudyProtected.css';
 
 import CaseStudy1 from './CaseStudy1'; // ✅ import your actual case study component
+import CaseStudy3 from './CaseStudy3'; // ✅ import your OTT redesign case study
 
 function CaseStudyProtected() {
   const { id } = useParams();
@@ -25,6 +26,8 @@ function CaseStudyProtected() {
       // You can add more cases like:
       // case 'stock-watchlist':
       //   return <CaseStudy2 />;
+      case 'ott-redesign':
+        return <CaseStudy3 />;
       default:
         return <p>Case study not found.</p>;
     }
