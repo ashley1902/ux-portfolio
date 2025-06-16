@@ -35,6 +35,7 @@ function CaseStudy3() {
 
         <div className="cs3-content-section">
           <h2 className="cs3-section-title">The Story Behind Bas Ek Min</h2>
+          <img src="/all-ss.png" alt="What kind of people" className="cs3-image" />
           <p className="cs3-content-text">
             This project started with a feeling, not a feature.
           </p>
@@ -326,8 +327,32 @@ function CaseStudy3() {
             <li>Smart shortlists</li>
           </ul>
 
+          <h3>Prioritization & Behavioral Design Mapping</h3>
+          <p className="cs3-content-text">
+            We combined the qualitative themes and survey patterns into a MoSCoW matrix for feature prioritization.
+          </p>
+
+          <img src="/moscow-matrix.png" alt="MoSCoW Matrix" className="cs3-image" />
+
+          <h4>Must-Have Needs:</h4>
+          <ul className="cs3-content-list">
+            <li>Clear “Continue Watching” section</li>
+            <li>Contextual “Friends Are Watching” module</li>
+            <li>One-tap access to comfort genres</li>
+          </ul>
+
+          <h4>Scenario Mapping & JTBD Flow:</h4>
+          <ul className="cs3-content-list">
+            <li>You’re commuting with earphones—find something light in 30 sec.</li>
+            <li>You want to watch something while cooking.</li>
+            <li>You’re alone at night and want to try something new.</li>
+          </ul>
+
+          <img src="/scenario-map-1.png" alt="Scenario Map 1" className="cs3-image" />
+          <img src="/scenario-map-2.png" alt="Scenario Map 2" className="cs3-image" />
+          
           <img src="/written-ui.png" alt="Written UI" className="cs3-image" />
-          <img src="/final-app-mockup.png" alt="Final App Mockup" style={{maxWidth: '300px',height: 'auto'}}/>
+          <img src="/final-app-mockup.png" alt="Final App Mockup" style={{ maxWidth: '300px', height: 'auto' }} />
         </div>
 
         <div className="cs3-content-section">
