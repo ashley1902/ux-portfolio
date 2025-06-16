@@ -45,20 +45,20 @@ function Blogs() {
       readTime: '7 min read'
     },
     {
-      title: 'SPICE, SPIDER & ECLIPSE Frameworks',
-      subtitle: 'Asking powerful UX research questions',
-      category: 'Research Frameworks',
-      route: '/blogs/research-frameworks',
-      date: '2025-06-04',
+      title: 'Behavioral Drift as a Signal - Detecting Habit Breaks, Intention Shifts, and UX Anomalies',
+      subtitle: 'Detecting behavioral drift—subtle deviations from user norms—helps identify early signs of disengagement, goal shifts, or friction, enabling proactive, context-aware design interventions before churn occurs.',
+      category: 'Research Framework',
+      route: '/blogs/behavioral-drift',
+      date: '2025-05-29',
       readTime: '7 min read'
     },
     {
-      title: 'ELO Scoring in Usability Testing',
-      subtitle: 'Using competitive ranking models in UX',
-      category: 'Evaluation Methods',
-      route: '/blogs/elo-usability',
-      date: '2025-06-04',
-      readTime: '7 min read'
+      title: 'Segment vs. Cohort vs. Cluster Analysis in UX and Product Research',
+      subtitle: 'Segment, cohort, and cluster analysis offer unique lenses for UX research—segmenting uses predefined user attributes, cohorting tracks behavioral change over time, and clustering uncovers organic patterns from user data—enabling product teams to design with greater precision, adaptability, and insight into evolving user needs.',
+      category: 'Research Framework',
+      route: '/blogs/segmentation',
+      date: '2025-06-14',
+      readTime: '11 min read'
     },
     {
       title: 'Whisper + GPT for UX Transcription',
@@ -69,20 +69,20 @@ function Blogs() {
       readTime: '7 min read'
     },
     {
-      title: 'Sentiment Loops in Agentic AI',
-      subtitle: 'Designing emotion-aware feedback cycles',
-      category: 'Agent UX',
-      route: '/blogs/sentiment-loops',
-      date: '2025-06-04',
-      readTime: '7 min read'
+      title: 'Tracking UX Over Time: A Deep Dive into Longitudinal Research for Product Teams',
+      subtitle: 'Learn how longitudinal research methods can help product teams understand user behavior and satisfaction over weeks or months to build better experiences.',
+      category: 'Research Framework',
+      route: '/blogs/longitudinal-research',
+      date: '2025-05-17',
+      readTime: '14 min read'
     },
     {
-      title: 'Drift Detection in UX Telemetry',
-      subtitle: 'Monitoring behavioral changes over time',
-      category: 'Product Analytics',
-      route: '/blogs/ux-drift',
-      date: '2025-06-04',
-      readTime: '7 min read'
+      title: 'Designing with Evidence: 12 Summative UX Methods Every Fintech Researcher',
+      subtitle: 'From usability testing to NPS, learn the top summative UX research methods to validate and improve core flows in high-impact fintech products.',
+      category: 'UX Research',
+      route: '/blogs/summarative-methods',
+      date: '2024-02-16',
+      readTime: '17 min read'
     }
   ];
 

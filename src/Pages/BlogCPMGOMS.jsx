@@ -10,7 +10,7 @@ function BlogCPMGOMS() {
           Bridging the Gap – Why We Need Both CPM-GOMS and Behavioral Science in UX
         </h1>
         <div className="blog-detail-meta">
-          <span>2025-06-14</span>
+          <span>June 14, 2025</span>
           <span>·</span>
           <span>9 min read</span>
         </div>

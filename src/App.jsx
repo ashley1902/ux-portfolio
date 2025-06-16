@@ -14,6 +14,11 @@ import ValTExBlog from './Pages/ValTExBlog';
 import FeedbackLoopsBlog from './Pages/FeedbackLoopsBlog';
 import LoopResponseModelingBlog from './Pages/LoopResponseModelingBlog';
 import TemporalSentimentBlog from './Pages/TemporalSentimentBlog';
+import BehavioralDriftBlog from './Pages/BehavioralDriftBlog';
+import SegmentationBlog from './Pages/SegmentationBlog';  
+import WhisperPipelineBlog from './Pages/WhisperPipelineBlog';
+import LongitudinalResearchBlog from './Pages/LongitudinalResearchBlog';
+import SummativeMethodsBlog from './Pages/SummativeMethodsBlog';
 
 function App() {
   return (
@@ -31,6 +36,11 @@ function App() {
         <Route path="/blogs/feedback-loops" element={<FeedbackLoopsBlog />} />
         <Route path="/blogs/loop-response" element={<LoopResponseModelingBlog />} />
         <Route path="/blogs/temporal-sentiment" element={<TemporalSentimentBlog />} />
+        <Route path="/blogs/behavioral-drift" element={<BehavioralDriftBlog />} />
+        <Route path="/blogs/segmentation" element={<SegmentationBlog />} />
+        <Route path="/blogs/whisper-pipeline" element={<WhisperPipelineBlog />} />
+        <Route path="/blogs/longitudinal-research" element={<LongitudinalResearchBlog />} />
+        <Route path="/blogs/summarative-methods" element={<SummativeMethodsBlog />} />
       </Routes>
       <Footer />
     </>
