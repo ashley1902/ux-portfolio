@@ -12,9 +12,9 @@ export const caseStudies = [
     tags: ['FMCG', 'B2B'],
     image: cs1,
     summary:
-      'Improve discoverability, personalization, and reorder efficiency in a B2B app for small and medium-sized retailers.',
+      'Improve discoverability, personalization, and reorder efficiency in a B2B app for small and medium-sized retailers across India. Deep dive into persona-driven UX redesign, research methods, impact metrics, and key insights.',
     duration: '2 months',
-    outcome: 'Company implemented a component-based strategy',
+    outcome: 'Implemented a component-based strategy',
     type: 'Mixed Methods',
   },
   {
@@ -23,9 +23,9 @@ export const caseStudies = [
     tags: ['Quantitative', 'Clustering Analysis'],
     image: cs2,
     summary:
-      "Used K-Prototypes clustering and Fogg's Model to optimize watchlist features.",
+      "Using K-Prototypes clustering and Fogg's Behavioral Model to analyze user behavior and optimize watchlist features in trading platform.",
     duration: '3 months',
-    outcome: 'Enhanced user segmentation and feature optimization',
+    outcome: 'Enhanced user segmentation & feature optimization',
     type: 'Quantitative',
   },
   {
@@ -45,21 +45,10 @@ export const caseStudies = [
     tags: ['Quantitative', 'Travel'],
     image: cs4,
     summary:
-      'Large-scale research analyzing booking behaviors and decision patterns.',
+      'Large-scale quantitative research with 400+ interviews analyzing booking behaviors and decision patterns.',
     duration: '5 months',
     outcome: '28% increase in booking conversion',
     type: 'Quantitative',
-  },
-  {
-    id: 'spa-usability',
-    title: 'SPA Usability Case Study',
-    tags: ['Mixed Methods', 'AR/VR'],
-    image: cs5,
-    summary:
-      'Eye tracking + cognitive load assessment for educational gaming UX.',
-    duration: '8 weeks',
-    outcome: '60% improvement in learning retention',
-    type: 'Mixed Methods',
   },
   {
     id: 'insurance-dropout',
@@ -67,7 +56,7 @@ export const caseStudies = [
     tags: ['Mixed Methods', 'Insurance'],
     image: cs6,
     summary:
-      'Statistical validation and journey mapping for digital insurance UX.',
+      'Mixed-method research combining statistical validation and user journey mapping for digital insurance products.',
     duration: '3 months',
     outcome: '42% reduction in claim processing time',
     type: 'Mixed Methods',

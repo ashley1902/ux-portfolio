@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 function Hero() {
@@ -12,13 +13,12 @@ function Hero() {
           I'm Vivek Gopinath, a UX researcher passionate about understanding human behavior through mixed-method research
           approaches, cognitive science principles, and innovative machine learning applications in user experience design.
         </p>
-        <div className="hero-buttons">
-          <button className="btn primary">
-            View My Work <span>→</span>
-          </button>
-          <button className="btn secondary">
-            <span>💬</span> Ask Vaia <span style={{ fontSize: '0.85rem' }}>(Vivek’s AI Assistant)</span>
-          </button>
+        <div className="hero-buttons" style={{ justifyContent: 'center' }}>
+          <Link to="/case-studies">
+            <button className="btn primary">
+              View My Work <span>→</span>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

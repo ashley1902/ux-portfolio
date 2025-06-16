@@ -26,8 +26,15 @@ function AboutAndResearch() {
           </p>
 
           <div className="about-buttons">
-            <button className="btn primary">Download Resume</button>
-            <button className="btn secondary">LinkedIn Profile</button>
+            <a href="/Vivek_Gopinath_April_24_2025_compressed.pdf" download className="btn primary">Download Resume</a>
+            <a
+              href="https://www.linkedin.com/in/gopinathvivek"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn secondary"
+            >
+              LinkedIn Profile
+            </a>
           </div>
         </div>
 
