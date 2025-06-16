@@ -10,7 +10,7 @@ function ValTExBlog() {
           Modeling Emotional Drift in AI Interactions with ValTEx
         </h1>
         <div className="blog-detail-meta">
-          <span>2025-06-08</span>
+          <span>June 08, 2025</span>
           <span>9 min read</span>
         </div>
 
@@ -115,7 +115,7 @@ function ValTExBlog() {
           <p>Because the longer the conversation, the more important it becomes to feel heard—not just understood.</p>
 
           <div className="blog-detail-image">
-            <img src="/public/valtex-drift-graph.png" alt="Emotional Drift Graph" style={{ width: '100%', borderRadius: '12px', marginTop: '2rem' }} />
+            <img src="/valtex-drift-graph.png" alt="Emotional Drift Graph" style={{ width: '100%', borderRadius: '12px', marginTop: '2rem' }} />
           </div>
         </div>
       </div>
