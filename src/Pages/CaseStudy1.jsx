@@ -87,7 +87,7 @@ function CaseStudy1() {
         </div>
 
         <div className="cs1-content-section">
-          <h3>🖼 Eye Tracking Studies</h3>
+          <h3>Eye Tracking Studies</h3>
           <img src="/eye-tracking-study.png" alt="Eye Tracking Studies" className="cs1-image" />
         </div>
 
@@ -149,10 +149,10 @@ function CaseStudy1() {
         <div className="cs1-content-section">
           <h3>Outcome Metrics (3 Weeks Post-Launch)</h3>
           <ul className="cs1-content-list">
-            <li>Avg. Order Time: ↓ 53.7%</li>
-            <li>Reorder Usage: ↑ 200%</li>
-            <li>Feature Adoption: ↑ to 75–90%</li>
-            <li>14-day App Retention: ↑ 25%</li>
+            <li>Avg. Order Time: Confidential</li>
+            <li>Reorder Usage: Confidential</li>
+            <li>Feature Adoption: Confidential</li>
+            <li>14-day App Retention: Confidential</li>
           </ul>
           <img src="/insights.png" alt="insights" className="cs1-image" />
         </div>

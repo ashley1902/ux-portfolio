@@ -4,6 +4,7 @@ import './CaseStudyProtected.css';
 
 import CaseStudy1 from './CaseStudy1'; // ✅ import your actual case study component
 import CaseStudy3 from './CaseStudy3'; // ✅ import your OTT redesign case study
+import CaseStudy2 from './CaseStudy2'; 
 
 function CaseStudyProtected() {
   const { id } = useParams();
@@ -26,6 +27,8 @@ function CaseStudyProtected() {
       // You can add more cases like:
       // case 'stock-watchlist':
       //   return <CaseStudy2 />;
+      case 'watchlist':
+        return<CaseStudy2 />;
       case 'ott-redesign':
         return <CaseStudy3 />;
       default:
