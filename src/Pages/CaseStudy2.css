@@ -1,0 +1,115 @@
+.cs2-hero {
+  background-color: #fff;
+  padding: 3rem 0rem;
+  min-height: 100vh;
+}
+
+.cs2-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: 0 2rem;
+}
+
+.cs2-title {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #0a0a0a;
+  margin-bottom: 2rem;
+  margin-top: -5rem;
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+/* Section Styling */
+.cs2-content-section {
+  margin-top: 2rem;
+  text-align: left;
+  margin-left: -7rem;
+  margin-right: -7rem;
+}
+
+.cs2-section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 2rem;
+}
+
+.cs2-content-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.cs2-content-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.cs2-content-list li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cs2-content-list strong {
+  color: #111;
+}
+
+/* Subheadings */
+.cs2-content-section h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: #1a1a1a;
+}
+
+.cs2-content-section h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #1a1a1a;
+}
+
+/* Images */
+.cs2-image {
+  width: 100%;
+  max-width: 960px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .cs2-title {
+    font-size: 2.1rem;
+  }
+
+  .cs2-content-section h2,
+  .cs2-section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cs2-title {
+    font-size: 1.8rem;
+  }
+
+  .cs2-content-text,
+  .cs2-content-list li {
+    font-size: 0.95rem;
+  }
+
+  .cs2-image {
+    max-width: 100%;
+  }
+}
