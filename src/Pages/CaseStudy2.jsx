@@ -79,8 +79,8 @@ function CaseStudy2() {
             <li><strong>Psychographic:</strong> Attitudes toward complexity and customization</li>
           </ul>
           
-          <img src="//survey-ui-screenshot.png" alt="Survey UI screenshot" className="cs2-image" />
-          <img src="//notification-banner.png" alt="Notification banner shown to users" className="cs2-image" />
+          <img src="/survey-ui-screenshot.png" alt="Survey UI screenshot" className="cs2-image" />
+          <img src="/notification-banner.png" alt="Notification banner shown to users" className="cs2-image" />
           
           <p className="cs2-content-text">
             The survey was deployed in-app, targeted to users across three major cohorts, aligned with actual trading behavior. This helped ensure statistical coverage that approximated a Gaussian (normal) distribution—a critical detail for downstream clustering.
@@ -91,8 +91,8 @@ function CaseStudy2() {
             Once the responses came in, I began cleaning the dataset for analysis. This required recoding categorical responses into numeric values, identifying outliers, and structuring the dataset so it would be compatible with clustering algorithms in Python.
           </p>
           
-          <img src="//raw-data-table.png" alt="Raw data table" className="cs2-image" />
-          <img src="//cleaned-recoded-data.png" alt="Cleaned and recoded survey data" className="cs2-image" />
+          <img src="/raw-data-table.png" alt="Raw data table" className="cs2-image" />
+          <img src="/cleaned-recoded-data.png" alt="Cleaned and recoded survey data" className="cs2-image" />
           
           <p className="cs2-content-text">
             Each question was preserved as-is, but transformed for clarity. I also ran Cronbach's Alpha checks on scaled items to verify internal consistency—an important quality gate for survey-based behavioral research.
@@ -103,8 +103,8 @@ function CaseStudy2() {
             Before jumping into clustering, I ran a correlation matrix across the entire dataset. This helped me identify early behavioral relationships worth noting—and later validating through cluster analysis.
           </p>
           
-          <img src="//correlation-matrix-heatmap.png" alt="Correlation Matrix Heatmap" className="cs2-image" />
-          <img src="//top-4-behavioral-correlations.png" alt="Top 4 Behavioral Correlation Pairs" className="cs2-image" />
+          <img src="/correlation-matrix-heatmap.png" alt="Correlation Matrix Heatmap" className="cs2-image" />
+          <img src="/top-4-behavioral-correlations.png" alt="Top 4 Behavioral Correlation Pairs" className="cs2-image" />
           
           <p className="cs2-content-text">
             Some early patterns stood out clearly:
@@ -123,8 +123,8 @@ function CaseStudy2() {
             I used the K-Prototypes algorithm, which handles both numeric and categorical data types, to segment users. The Elbow Method suggested three optimal clusters—each showing a distinctive behavior fingerprint.
           </p>
           
-          <img src="//cluster-behavior-summary.png" alt="Cluster Behavior Summary Table" className="cs2-image" />
-          <img src="//fogg-behavior-model-mapping.png" alt="Fogg Behavior Model Mapping" className="cs2-image" />
+          <img src="/cluster-behavior-summary.png" alt="Cluster Behavior Summary Table" className="cs2-image" />
+          <img src="/fogg-behavior-model-mapping.png" alt="Fogg Behavior Model Mapping" className="cs2-image" />
           
           <p className="cs2-content-text">
             These weren't just clusters. They were personas shaped by data—deeply behavioral, functionally distinct, and ripe for targeted design strategies.
@@ -159,8 +159,8 @@ function CaseStudy2() {
             <li><strong>TPS Score:</strong> –36</li>
           </ul>
           
-          <img src="//watchlist-feature-importance-bar.png" alt="Bar graph of watchlist feature importance" className="cs2-image" />
-          <img src="//stock-info-preferences.png" alt="Stock info preferences across users" className="cs2-image" />
+          <img src="/watchlist-feature-importance-bar.png" alt="Bar graph of watchlist feature importance" className="cs2-image" />
+          <img src="/stock-info-preferences.png" alt="Stock info preferences across users" className="cs2-image" />
         </div>
 
         <div className="cs2-content-section">

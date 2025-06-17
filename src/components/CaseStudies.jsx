@@ -30,17 +30,20 @@ function CaseStudies() {
           </Link>
 
           {/* Card 2 */}
+          <Link to="/case-studies/watchlist" className="case-card-link">
           <div className="case-card">
             <img src={case2} alt="Watchlist" />
             <div className="tags">
               <span>Quantitative</span>
               <span>Clustering Analysis</span>
             </div>
-            <h4>WIP - Personalizing the Watchlist Experience through Behaviorally Clustered Insights</h4>
+            <h4>Personalizing the Watchlist Experience through Behaviorally Clustered Insights</h4>
             <p>
               Using K-Prototypes clustering and Fogg's Behavioral Model to analyze user behavior and optimize watchlist features in trading platform.
             </p>
           </div>
+         </Link>
+        
 
           {/* Card 3 */}
           <Link to="/case-studies/ott-redesign" className="case-card-link">
