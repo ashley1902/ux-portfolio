@@ -5,103 +5,121 @@ function WhisperPipelineBlog() {
   return (
     <section className="blog-post-section">
       <div className="blog-post-container">
-        <h1 className="blog-post-title">Whisper + GPT for UX Transcription</h1>
-        <h2 className="blog-post-subtitle">AI pipelines for qualitative analysis at scale</h2>
-        <div className="blog-post-meta">June 4, 2025 · 7 min read</div>
+        <h1 className="blog-post-title">Automated Qualitative Research Workflow Using Whisper, NLP, and Monte Carlo: A Guide for UX Researchers</h1>
 
         <div className="blog-post-content">
-          <h3>Whisper Series, Part 1: Transcribing UX Interviews with Whisper + ChatGPT—and Why I Use the Terminal to Get It Done</h3>
-          <p>
-            As a UX researcher, I’ve spent countless hours listening to user interviews—scrubbing through audio, annotating key moments, and trying to decipher what users really mean beneath their words. Transcription is a key part of that process. But doing it efficiently? That’s where tooling makes all the difference.
-          </p>
-          <p>
-            In this post, I’ll share how I use Whisper, ChatGPT, and the Mac Terminal (with Homebrew) to streamline transcription—and how this combo has become a core part of my UX research workflow.
-          </p>
-
-          <h3>Why the Terminal? Isn’t That Just for Engineers?</h3>
-          <p>
-            If you’ve never used the Terminal before, I get it. It can feel intimidating. But once you dip your toes in, you’ll find it’s an incredibly powerful way to control your system, install tools, and build reproducible workflows—especially for things like audio transcription.
-          </p>
-          <p>
-            Think of it this way: If GUI apps are like using a remote, the Terminal is like programming your own smart home. It’s direct, flexible, and surprisingly fast once you know a few commands.
-          </p>
-
-          <h3>What Is Whisper?</h3>
-          <p>
-            Whisper is an open-source, automatic speech recognition (ASR) system developed by OpenAI. It’s trained on a massive amount of multilingual and multitask supervised data collected from the web. It’s fast, accurate, and—best of all—can be run locally on your own machine, meaning no internet upload of sensitive research recordings.
-          </p>
-          <p>
-            I mostly use the large-v2 or large-v3 models for the best accuracy, especially when working with noisy data or mixed-accent interviews. It’s perfect for transcribing:
-          </p>
+          <h2>Introduction:</h2>
+          <p>This document is for UX researchers, design strategists, or behavioral scientists who are conducting semi-structured interviews and want to take their qualitative analysis further—automatically, efficiently, and with scientific depth. You may be sitting with 30 recorded interviews and wondering:</p>
           <ul>
-            <li>UX interviews</li>
-            <li>Field recordings</li>
-            <li>Customer calls</li>
-            <li>Internal product testing sessions</li>
+            <li>How do I transcribe this efficiently?</li>
+            <li>How do I ensure I'm not missing any emerging themes?</li>
+            <li>Can I track emotional tones and sentiment shifts?</li>
+            <li>Can I confidently say I've reached theme saturation?</li>
           </ul>
-          <p>If you’re running interviews in non-English languages, Whisper supports that too.</p>
+          <p>The answer: Yes. With just your terminal, Whisper CLI, Python scripts, and free tools like VADER and gensim, you can build a full workflow that does transcription, thematic discovery, tone and sentiment analysis, and valence trajectory modeling.</p>
+          <p>This guide assumes you know nothing about programming or statistical modeling. Don’t worry—each step is explained like a story, written for someone who just wants to do good research. You're not replacing human insight. You're scaling your own thinking.</p>
+          <p>Let me walk you through each step—as though I'm working alongside you.</p>
 
-          <h3>Step 1: Installing Software with Homebrew</h3>
-          <h4>🧃 What is Homebrew?</h4>
-          <p>
-            Think of Homebrew as your Mac’s version of the App Store—but in the Terminal. It lets you install everything from media libraries (like FFmpeg) to full applications (like RStudio or VLC) with a single line of code.
-          </p>
-          <p>To install Homebrew (if you haven’t already), open your Terminal and run:</p>
-          <pre className="code-block">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre>
-          <p>Once that’s done, you can install almost any package with:</p>
-          <pre className="code-block">brew install &lt;package-name&gt;</pre>
-          <p>Need a graphical app? Just add <code>--cask</code>:</p>
-          <pre className="code-block">brew install --cask vlc</pre>
-          <p>For example:</p>
+          <h3>Step-by-Step Workflow Summary</h3>
           <ul>
-            <li><code>brew install ffmpeg</code> → Essential for processing audio files for Whisper.</li>
-            <li><code>brew install --cask rstudio</code> → If you do stats-heavy research, this is gold.</li>
-          </ul>
-          <p>This method is a lifesaver when your network blocks direct downloads or you’re working in a restrictive corporate environment.</p>
-
-          <h3>Step 2: Setting Up Whisper</h3>
-          <p>Whisper is available in Python and C++ variants. I prefer the C++ version, especially for long interviews, because it’s faster and more memory-efficient.</p>
-          <p>If you’re using Python, setup is also simple:</p>
-          <pre className="code-block">pip install git+https://github.com/openai/whisper.git</pre>
-          <p>Then run:</p>
-          <pre className="code-block">whisper youraudiofile.mp3 --model large-v2</pre>
-          <p>It automatically transcribes and outputs a <code>.txt</code> or <code>.srt</code> file, which you can feed into ChatGPT for summarization, theme detection, or insight extraction.</p>
-
-          <h3>Step 3: Why This Changed My Research Workflow</h3>
-          <p>Before I adopted this stack, transcription was a frustrating patchwork of:</p>
-          <ul>
-            <li>Uploading files to online tools</li>
-            <li>Waiting for processing</li>
-            <li>Paying per minute of audio</li>
-            <li>Manual cleanup of low-accuracy results</li>
-          </ul>
-          <p>Now, with Whisper and Homebrew installed, I:</p>
-          <ul>
-            <li>Transcribe locally and securely</li>
-            <li>Batch process interviews</li>
-            <li>Pull transcripts into ChatGPT for deeper analysis (e.g., emotion, themes, quotes)</li>
-            <li>Stay inside the Terminal, where I can rename files, edit metadata, or launch next steps—all without switching windows</li>
-          </ul>
-          <p>This isn’t just a speed boost. It’s workflow empowerment.</p>
-
-          <h3>Pro Tips for Young UXRs</h3>
-          <ul>
-            <li>Learn the Terminal incrementally. You don’t need to be a developer. Just learn enough to automate your frequent tasks.</li>
-            <li>Keep a command cheat sheet. Copy-paste and tweak until it becomes second nature.</li>
-            <li>Automate repetitive stuff. Transcribe 10 files in one go? Easy with a loop.</li>
-            <li>Pair it with ChatGPT. Ask ChatGPT to summarize the transcript, identify sentiment, or extract common phrases from users. It’s like having a junior analyst by your side.</li>
+            <li>Prepare your interview audio files</li>
+            <li>Transcribe using Whisper from terminal</li>
+            <li>Structure and clean transcripts</li>
+            <li>Split into sentences and tag speakers</li>
+            <li>Apply sentiment analysis using VADER</li>
+            <li>Detect tone/emotion using pre-trained classifiers</li>
+            <li>Discover themes using topic modeling (LDA or BERTopic)</li>
+            <li>Simulate theme saturation with Monte Carlo</li>
+            <li>Model emotional recovery/dips (ValTEx)</li>
+            <li>Export for refinement and reporting</li>
           </ul>
 
-          <h3>Bonus: Book Recommendation</h3>
-          <p>
-            If you’re ready to go deeper, check out <em>Tweak Your Mac Terminal</em> by Daniel Jalkut. It’s friendly, insightful, and full of small tricks that lead to big efficiencies.
-          </p>
+          <h3>Step 1: Preparing Your Interview Audio Files</h3>
+          <p>What is happening here? You’re organizing your raw data. This is like laying your notes on a table before reading them. You want to make sure all your audio files are in one place and in a format that Whisper (the transcription tool) understands.</p>
+          <pre>{`mkdir interviews  # This creates a folder named 'interviews'
+mv *.wav interviews/  # This moves all .wav files into that folder`}</pre>
+          <p>Why split long files? Whisper struggles with very long recordings. If your interviews are 1 hour+, split them into 15-minute chunks:</p>
+          <pre>{`ffmpeg -i longfile.wav -f segment -segment_time 900 -c copy interview_%03d.wav`}</pre>
+
+          <h3>Step 2: Transcribing with Whisper CLI (Offline)</h3>
+          <p>What are we doing? Turning voice into text. Whisper is an AI that listens to audio and writes down what it hears.</p>
+          <pre>{`pip install git+https://github.com/openai/whisper.git
+whisper interviews/interview_001.wav --model medium --output_format txt --output_dir transcripts/
+
+for f in interviews/*.wav; do whisper "$f" --model medium --output_format txt --output_dir transcripts/; done`}</pre>
+          <p>This saves you hours of typing. Still, always skim the results to catch mishearings.</p>
+
+          <h3>Step 3: Cleaning and Structuring Transcripts</h3>
+          <p>Why this matters: You want clean, structured text so you can analyze it later. Think of this as turning raw transcripts into a spreadsheet format.</p>
+          <p>Goal: Create a table like:</p>
+          <pre>{`filename | timestamp | speaker | sentence`}</pre>
+          <p>Use simple Python or bash scripting to clean up the text output into rows.</p>
+
+          <h3>Step 4: Sentence Splitting and Speaker Tagging</h3>
+          <p>What are we doing? Instead of analyzing huge paragraphs, we’re breaking the text into bite-sized thoughts: individual sentences.</p>
+          <pre>{`from nltk.tokenize import sent_tokenize
+with open("transcripts/interview_001.txt") as f:
+    text = f.read()
+sentences = sent_tokenize(text)
+for s in sentences:
+    print(s)`}</pre>
+          <p>Why? It lets you look at how emotions or themes change sentence by sentence. Tag speakers manually if needed, especially if it’s a back-and-forth interview.</p>
+
+          <h3>Step 5: Sentiment Analysis (VADER)</h3>
+          <p>What is sentiment? Sentiment is how positive, negative, or neutral a sentence feels. VADER is a simple tool trained to score that.</p>
+          <pre>{`pip install vaderSentiment
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+analyzer = SentimentIntensityAnalyzer()
+print(analyzer.polarity_scores("I usually binge at night."))`}</pre>
+          <p>The output will show whether this sentence feels positive, neutral, or negative. Great for spotting frustration or delight.</p>
+
+          <h3>Step 6: Tone Detection (Emotion Models)</h3>
+          <p>What is tone detection? Beyond sentiment, tone tells you the emotional color: joy, sadness, anger, fear. It helps you understand emotional nuance.</p>
+          <pre>{`from transformers import pipeline
+classifier = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base")
+print(classifier("I feel overwhelmed by suggestions."))`}</pre>
+          <p>You’ll get output like: <code>{`{ label: "anxiety", score: 0.85 }`}</code></p>
+
+          <h3>Step 7: Theme Discovery with Topic Modeling (LDA)</h3>
+          <p>What are we doing? We’re looking for repeating themes or topics in your data. LDA (Latent Dirichlet Allocation) groups words that often appear together.</p>
+          <pre>{`pip install gensim
+from gensim import corpora, models
+texts = [line.split() for line in open("cleaned_sentences.txt")]
+dictionary = corpora.Dictionary(texts)
+corpus = [dictionary.doc2bow(text) for text in texts]
+lda = models.LdaModel(corpus, num_topics=6, id2word=dictionary, passes=15)
+lda.print_topics()`}</pre>
+          <p>This gives you sets of keywords that hint at topics like "recommendations," "family watching," or "confusion."</p>
+
+          <h3>Step 8: Monte Carlo Simulation for Theme Saturation</h3>
+          <p>What is this? It helps you estimate how many interviews you needed to reach most of your themes. It's like asking:</p>
+          <blockquote>If I had just 10 interviews, would I have found 80% of the patterns?</blockquote>
+          <pre>{`import random
+samples = [["theme1", "theme2"], ["theme2", "theme3"], ...]
+for n in range(1, 30):
+    unique_sets = []
+    for _ in range(1000):
+        subset = random.sample(samples, n)
+        unique = set([t for group in subset for t in group])
+        unique_sets.append(len(unique))
+    print(n, sum(unique_sets)/len(unique_sets))`}</pre>
+          <p>Why? This lets you defend your sample size to stakeholders.</p>
+
+          <h3>Step 9: ValTEx Emotional Modeling</h3>
+          <p>What is ValTEx? ValTEx (Valence-Telemetry Exploration) helps you track emotional arcs: when users become confused, recover, or disengage emotionally.</p>
+          <pre>{`import pandas as pd
+sentiment_scores = pd.read_csv("sentiments.csv")
+sentiment_scores["rolling"] = sentiment_scores["compound"].rolling(5).mean()
+sentiment_scores["delta"] = sentiment_scores["compound"].diff()`}</pre>
+          <p>Plot to see dips, peaks, and plateaus in emotional engagement.</p>
+
+          <h3>Step 10: Export to Word or CSV for Final Analysis</h3>
+          <pre>{`cat transcripts/*.txt > all_transcripts.txt
+python format_to_csv.py > output.csv`}</pre>
+          <p>Open in Excel or Word. Read through and refine your themes. Automation gives you the map. You still walk the terrain.</p>
 
           <h3>Final Thoughts</h3>
-          <p>
-            Whisper + Homebrew + Terminal + ChatGPT isn’t just a tech stack—it’s a way of thinking. As a UX researcher, the goal isn’t to just “get the transcript”—it’s to mine insight from behavior. These tools help you do that faster, more privately, and more flexibly than traditional services.
-          </p>
-          <p><strong>Don’t wait to “get technical.” The Terminal is your friend. Your users—and your workflow—will thank you.</strong></p>
+          <p>You don’t need to be a coder to be a modern researcher. This guide helps you get started with reproducible, scalable, human-first UX research.</p>
         </div>
       </div>
     </section>
