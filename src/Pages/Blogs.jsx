@@ -61,8 +61,8 @@ function Blogs() {
       readTime: '11 min read'
     },
     {
-      title: 'Whisper + GPT for UX Transcription',
-      subtitle: 'AI pipelines for qualitative analysis at scale',
+      title: 'Automated Qualitative Research Workflow Using Whisper, NLP, and Monte Carlo',
+      subtitle: 'For UX researchers, design strategists, or behavioral scientists who are conducting semi-structured interviews and want to take their qualitative analysis further—automatically, efficiently, and with scientific depth.',
       category: 'AI Tools',
       route: '/blogs/whisper-pipeline',
       date: '2025-06-04',
