@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -8,6 +9,8 @@ import CaseStudyProtected from './Pages/CaseStudyProtected';
 import Podcast from './Pages/Podcast';
 import Contact from './Pages/Contact';
 import Blogs from './Pages/Blogs';
+import ChatbotPopup from './components/ChatbotPopup';
+import ChatbotButton from './components/ChatbotButton'
 
 import BlogCPMGOMS from './Pages/BlogCPMGOMS';
 import ValTExBlog from './Pages/ValTExBlog';
@@ -21,6 +24,9 @@ import LongitudinalResearchBlog from './Pages/LongitudinalResearchBlog';
 import SummativeMethodsBlog from './Pages/SummativeMethodsBlog';
 
 function App() {
+  const [chatOpen, setChatOpen] = useState(false);
+  const toggleChat = () => setChatOpen(prev => !prev);
+  const closeChat = () => setChatOpen(false);
   return (
     <>
       <Navbar />
@@ -29,7 +35,7 @@ function App() {
         <Route path="/case-studies" element={<CaseStudiesPage />} />
         <Route path="/case-studies/:id" element={<CaseStudyProtected />} />
         <Route path="/podcasts" element={<Podcast />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact toggleChat={toggleChat} />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/cpm-goms" element={<BlogCPMGOMS />} />
         <Route path="/blogs/valtex" element={<ValTExBlog />} />
@@ -42,6 +48,8 @@ function App() {
         <Route path="/blogs/longitudinal-research" element={<LongitudinalResearchBlog />} />
         <Route path="/blogs/summarative-methods" element={<SummativeMethodsBlog />} />
       </Routes>
+      <ChatbotButton onClick={toggleChat} />
+      <ChatbotPopup isOpen={chatOpen} onClose={closeChat} />
       <Footer />
     </>
   );

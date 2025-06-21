@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 
-function Contact() {
+function Contact({ toggleChat }) {
   return (
     <section className="contact-wrapper">
       <h1 className="contact-title">Get In Touch</h1>
@@ -89,7 +89,9 @@ function Contact() {
               </div>
             </div>
 
-            <button className="start-btn">Start Conversation</button>
+            <button className="start-btn" onClick={toggleChat}>
+              Start Conversation
+            </button>
           </div>
         </div>
       </div>
