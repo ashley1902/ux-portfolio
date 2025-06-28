@@ -46,7 +46,7 @@ function CaseStudyProtected() {
         </div>
       ) : (
         <div className="protected-box">
-          <div className="lock-icon">🔒</div>
+          <div className="lock-icon">🔐</div>
           <h3>Protected Case Study</h3>
           <p>This case study contains confidential research insights. Please enter the password to access.</p>
 

@@ -58,7 +58,6 @@ function Contact({ toggleChat }) {
         {/* Right: Assistant */}
         <div className="ai-assistant">
           <h2>Ask Vaia – My AI Assistant</h2>
-          <span className="tag">🚧 Under Construction</span>
 
           <div className="ai-box">
             <div className="ai-header">

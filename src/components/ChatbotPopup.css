@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 90px;
   right: 20px;
-  width: 350px;
+  width: 400px;
   max-height: 500px;
   background: white;
   border-radius: 12px;
@@ -26,6 +26,7 @@
   flex: 1;
   padding: 10px;
   overflow-y: auto;
+  max-height: 300px; /* ✅ Add this */
 }
 
 .chatbot-message.bot {

@@ -14,7 +14,7 @@ function Hero() {
         <h1 className="hero-title">
           <span className="blue">Mixed Method UX Research</span>,{' '}
           <span>Cognitive Science</span> &{' '}
-          <span className="blue">Applying ML in UX Research</span>
+          <span className="blue">Applying ML in UXR</span>
         </h1>
 
         <p className="hero-sub">

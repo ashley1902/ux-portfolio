@@ -1,9 +1,14 @@
+import React, { useState } from 'react';
 import './AboutAndResearch.css';
 import { UserRound, Brain, BarChart2 } from 'lucide-react'; // ✅ modern icons
+import ResumeModal from './ResumeModal';
 
 function AboutAndResearch() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <section className="about-research-section">
+      {showModal && <ResumeModal onClose={() => setShowModal(false)} />}
       <div className="container about-research-grid">
         {/* LEFT COLUMN */}
         <div className="about-left">
@@ -26,7 +31,7 @@ function AboutAndResearch() {
           </p>
 
           <div className="about-buttons">
-            <a href="/Vivek_Gopinath_April_24_2025_compressed.pdf" download className="btn primary">Download Resume</a>
+            <button onClick={() => setShowModal(true)} className="btn primary">Download Resume</button>
             <a
               href="https://www.linkedin.com/in/gopinathvivek"
               target="_blank"

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react'; // ⬅️ add useEffect and useRef
 import './ChatbotPopup.css';
 import { sendMessageToOpenAI } from '../api/openai';
 
@@ -8,6 +8,16 @@ function ChatbotPopup({ isOpen, onClose }) {
     { type: 'bot', text: "Hey! I'm Vaia. Ask me about Vivek's UX research, case studies, or methods!" }
   ]);
   const [loading, setLoading] = useState(false);
+  const messagesEndRef = useRef(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      setMessages([
+        { type: 'bot', text: "Hey! I'm Vaia. Ask me about Vivek's UX research, case studies, or methods!" }
+      ]);
+      setUserInput('');
+    }
+  }, [isOpen]);
 
   const handleSend = async () => {
     if (userInput.trim() === '') return;
@@ -21,6 +31,10 @@ function ChatbotPopup({ isOpen, onClose }) {
     setMessages(prev => [...prev, { type: 'bot', text: botReply }]);
     setLoading(false);
   };
+
+  useEffect(() => {
+  messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
 
   if (!isOpen) return null;
 
@@ -37,6 +51,7 @@ function ChatbotPopup({ isOpen, onClose }) {
           </div>
         ))}
         {loading && <div className="chatbot-message bot">Typing…</div>}
+        <div ref={messagesEndRef} />
       </div>
       <div className="chatbot-input">
         <input
