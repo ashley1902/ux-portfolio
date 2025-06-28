@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
 import './ChatbotPopup.css';
+import { sendMessageToOpenAI } from '../api/openai';
 
 function ChatbotPopup({ isOpen, onClose }) {
   const [userInput, setUserInput] = useState('');
   const [messages, setMessages] = useState([
     { type: 'bot', text: "Hey! I'm Vaia. Ask me about Vivek's UX research, case studies, or methods!" }
   ]);
+  const [loading, setLoading] = useState(false);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (userInput.trim() === '') return;
-    setMessages([...messages, { type: 'user', text: userInput }]);
+
+    const input = userInput;
+    setMessages(prev => [...prev, { type: 'user', text: input }]);
     setUserInput('');
-    // Placeholder for bot response logic
-    setTimeout(() => {
-      setMessages(prev => [...prev, { type: 'bot', text: "Thanks for your message! (API coming soon)" }]);
-    }, 1000);
+    setLoading(true);
+
+    const botReply = await sendMessageToOpenAI(input);
+    setMessages(prev => [...prev, { type: 'bot', text: botReply }]);
+    setLoading(false);
   };
 
   if (!isOpen) return null;
@@ -22,7 +27,7 @@ function ChatbotPopup({ isOpen, onClose }) {
   return (
     <div className="chatbot-popup">
       <div className="chatbot-header">
-        <h4>Vaia - Vivek's Voice</h4>
+        <h4>Vaia – Vivek's Voice</h4>
         <button onClick={onClose}>✖</button>
       </div>
       <div className="chatbot-body">
@@ -31,6 +36,7 @@ function ChatbotPopup({ isOpen, onClose }) {
             {msg.text}
           </div>
         ))}
+        {loading && <div className="chatbot-message bot">Typing…</div>}
       </div>
       <div className="chatbot-input">
         <input
