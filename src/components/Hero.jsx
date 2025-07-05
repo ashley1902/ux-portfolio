@@ -12,17 +12,16 @@ function Hero() {
     <section className="hero">
       <div className="hero-content">
         <h1 className="hero-title">
-          <span className="blue">Mixed Method UX Research</span>,{' '}
-          <span>Cognitive Science</span> &{' '}
-          <span className="blue">Applying ML in UXR</span>
+          <span className="blue">Mixed Method UX Research</span> · {' '}
+          <span>Cognitive Science</span> · {' '}
+          <span className="blue">ML for Product Design</span>
         </h1>
 
         <p className="hero-sub">
-          I'm Vivek Gopinath, a UX researcher passionate about understanding human
-          behavior through mixed-method research approaches, cognitive science principles,
-          and innovative machine learning applications in user experience design.
+          I'm Vivek Gopinath, a UX researcher who combines mixed methods, 
+          cognitive science, and machine learning to understand human behaviour and design products that align with real user needs.
         </p>
-
+        
         <div className="hero-buttons">
           <Link to="/case-studies" className="btn primary">
             View My Work →

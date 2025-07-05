@@ -3,7 +3,7 @@
   bottom: 90px;
   right: 20px;
   width: 400px;
-  max-height: 500px;
+  max-height: 600px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.3);
@@ -26,7 +26,9 @@
   flex: 1;
   padding: 10px;
   overflow-y: auto;
-  max-height: 300px; /* ✅ Add this */
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .chatbot-message.bot {
@@ -35,7 +37,20 @@
   padding: 8px;
   border-radius: 8px;
   font-size: 14px;
+  align-self: flex-start; /* Left side */
+  max-width: 80%;
 }
+
+.chatbot-message.user {
+  background: #f1f1f1;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  align-self: flex-end; /* Right side */
+  max-width: 80%;
+}
+
 
 .chatbot-input {
   display: flex;

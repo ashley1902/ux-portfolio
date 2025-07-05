@@ -22,6 +22,8 @@ import SegmentationBlog from './Pages/SegmentationBlog';
 import WhisperPipelineBlog from './Pages/WhisperPipelineBlog';
 import LongitudinalResearchBlog from './Pages/LongitudinalResearchBlog';
 import SummativeMethodsBlog from './Pages/SummativeMethodsBlog';
+import ValTExAIBlog from './Pages/ValTExAIBlog';
+import IntentModelingBlog from './Pages/IntentModelingBlog';
 
 function App() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -47,6 +49,8 @@ function App() {
         <Route path="/blogs/whisper-pipeline" element={<WhisperPipelineBlog />} />
         <Route path="/blogs/longitudinal-research" element={<LongitudinalResearchBlog />} />
         <Route path="/blogs/summarative-methods" element={<SummativeMethodsBlog />} />
+        <Route path="/blogs/agentic-ux" element={<ValTExAIBlog />} />
+        <Route path="/blogs/intent-modeling" element={<IntentModelingBlog />} />
       </Routes>
       <ChatbotButton onClick={toggleChat} />
       <ChatbotPopup isOpen={chatOpen} onClose={closeChat} />

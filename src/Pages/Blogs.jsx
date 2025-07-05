@@ -83,6 +83,22 @@ function Blogs() {
       route: '/blogs/summarative-methods',
       date: '2024-02-16',
       readTime: '17 min read'
+    },
+    {
+      title: 'ValTEx: Modeling Trust, Emotion, and Alignment in Agentic AI UX',
+      subtitle: 'Learn how ValTEx, a composite UX metric combining sentiment, semantic alignment, and user behavior, helps AI teams detect trust loss and emotional drift in real time to design more empathetic and adaptive agent interactions.',
+      category: 'UX Research',
+      route: '/blogs/agentic-ux',
+      date: '2025-03-11',
+      readTime: '13 min read'
+    },
+    {
+      title: 'Intent Modeling with Action Graphs and Drift-Aware Prompts in AI Interfaces',
+      subtitle: 'Learn how intent modeling with Action Graphs and Drift-Aware Prompts enables AI interfaces to infer user goals, adapt to behavioral changes, and recover from interaction breakdowns for more resilient and user-aware experiences.',
+      category: 'AI Tools',
+      route: '/blogs/intent-modeling',
+      date: '2025-03-11',
+      readTime: '11 min read'
     }
   ];
 
