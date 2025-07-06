@@ -12,7 +12,7 @@ function Hero() {
     <section className="hero">
       <div className="hero-content">
         <h1 className="hero-title">
-          <span className="blue">Mixed Method UX Research</span> · {' '}
+          <span className="blue">Mixed Methods UX Research</span> · {' '}
           <span>Cognitive Science</span> · {' '}
           <span className="blue">ML for Product Design</span>
         </h1>
